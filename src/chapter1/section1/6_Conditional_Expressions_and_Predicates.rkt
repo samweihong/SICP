@@ -1,0 +1,42 @@
+#lang racket
+
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+(abs 5)
+(abs 0)
+(abs -5)
+
+(define (abs2 x)
+  (cond ((< x 0) (- x))
+        (else x)))
+(abs2 10)
+(abs2 0)
+(abs2 -10)
+
+(define (abs3 x)
+  (if (< x 0)
+      (- x)
+      x))
+(abs3 15)
+(abs3 0)
+(abs3 -15)
+
+(define (in-range x)
+  (and (> x 5) (< x 10)))
+(in-range 4)
+(in-range 8)
+(in-range 10)
+
+(define (>= x y)
+  (or (> x y) (= x y)))
+(>= 1 2)
+(>= 3 3)
+(>= 5 4)
+
+(define (>=2 x y)
+  (not (< x y)))
+(>=2 1 2)
+(>=2 3 3)
+(>=2 5 4)
