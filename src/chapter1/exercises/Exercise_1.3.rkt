@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define (sum-of-squares x y)
   (+ (* x x)

@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 486 ; just print the number
 

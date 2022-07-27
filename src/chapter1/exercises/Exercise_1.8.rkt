@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 ; Cube-root procedure using Newton's method
 (define (cube-root x)

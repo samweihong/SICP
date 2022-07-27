@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define size 2)
 size       ; 2

@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define (square x) (* x x))
 
@@ -8,8 +8,8 @@
 
 (define (sum-of-squares x y)
   (+ (square x) (square y)))
-(sum-of-squares 3 4) ; 3^2 + 4^2 = 5^2
+(sum-of-squares 3 4) ; 3^2 + 4^2 = 25
 
 (define (f a)
   (sum-of-squares (+ a 1) (* a 2)))
-(f 5) ; 6^2 + 10^2 = 136
+(f 5) ; (5 + 1)^2 + (5 * 2)^2 = 6^2 + 10^2 = 136
