@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 ; Euclid's algorithm
 (define (gcd a b)

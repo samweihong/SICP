@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 ; Compute elements of Pascal's triangle.
 (define (pascal row column)

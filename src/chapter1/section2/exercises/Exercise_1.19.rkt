@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define (fib n)
   (define (square n)

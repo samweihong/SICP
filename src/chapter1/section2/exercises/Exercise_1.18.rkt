@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 ; Iterative process
 (define (fast-* a b)

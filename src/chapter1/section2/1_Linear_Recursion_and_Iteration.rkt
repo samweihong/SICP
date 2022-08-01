@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define (factorial n)
   (if (= n 1)

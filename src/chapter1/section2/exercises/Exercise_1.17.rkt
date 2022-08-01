@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 (define (* a b)
   (if (= b 1)

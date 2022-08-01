@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 
 ; Fibonacci numbers computed using recursive process.
 (define (fib n)
