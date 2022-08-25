@@ -1,11 +1,11 @@
 #lang sicp
 
 ; Recursive filtered-accumulate
-(define (filtered-accumulate predicate combiner null-value term a next b)
+(define (filtered-accumulate filter combiner null-value term a next b)
   (if (> a b)
       null-value
-      (combiner (if (predicate a) (term a) null-value)
-                (filtered-accumulate predicate combiner null-value term (next a) next b))))
+      (combiner (if (filter a) (term a) null-value)
+                (filtered-accumulate filter combiner null-value term (next a) next b))))
 
 ; a.
 (define (prime? n)  
