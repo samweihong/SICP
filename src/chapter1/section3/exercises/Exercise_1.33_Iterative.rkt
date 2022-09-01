@@ -11,7 +11,7 @@
   (iter a null-value))
 
 ; a.
-(define (prime? n)  
+(define (prime? n)
   (define (smallest-divisor n)
     (find-divisor n 2))
   (define (find-divisor n test-divisor)
@@ -33,11 +33,6 @@
 (sum-of-squares-of-primes 0 20)
 
 ; b.
-(define (gcd a b)
-  (if (= b 0)
-      a
-      (gcd b (remainder a b))))
-
 (define (product-of-coprime-integers n)
   (define (is-coprime-integer? a)
     (= (gcd a n) 1))
