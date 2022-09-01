@@ -23,11 +23,6 @@
       identity
       (compose (repeated f (- n 1)) f)))
 
-(define (expt b n)
-  (if (= n 0)
-      1
-      (* b (expt b (- n 1)))))
-
 (define (n-th-root x n)
   (fixed-point ((repeated average-damp (floor (/ (log n) (log 2))))
                 (lambda (y)
